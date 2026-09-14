@@ -1,4 +1,4 @@
-# Evaluating Generative AI for OCR of firm-level data from the indices of the Moniteur Belge
+# Easy as 1-2-3? Vision-Language Models for Historical Text Recognition
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jdh-observer/bbibLkHcFVZT/main?filepath=article.ipynb)
 
