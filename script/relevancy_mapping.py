@@ -159,8 +159,9 @@ def compute_qwen_relevancy_per_token(model, inputs, processor, max_new_tokens=50
             del rollout
         if 'weighted_attn' in locals():
             del weighted_attn
-        torch.cuda.empty_cache()
-        torch.cuda.synchronize()
+        if device.type == 'cuda':
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
     
     return {
         'generated_tokens': generated_tokens,
